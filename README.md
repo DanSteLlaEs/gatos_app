@@ -1,6 +1,6 @@
 # Documentacion Proyecto gatos_app
 
-#### Proyecto para llamar la api de thecatapi usando java.
+#### Proyecto Educativo para llamar la api de thecatapi usando java.
 
 + Si desea saber todo sobre la documentacion de https://thecatapi.com/
 + Se trabajo con Java 11 utilizando librerias como https://mvnrepository.com/artifact/com.google.code.gson/gson y https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
