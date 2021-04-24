@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "321b54ea-3089-4038-9e2d-952292f38a9a",
+		"name": "gatitos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Gato aleatorio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/images/search",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						"search"
+					]
+				},
+				"description": "Gato aleatorio"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.thecatapi.com/v1/favourites",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "d6cb32cc-8e43-4c1c-9182-eec7395adc4d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"image_id\": \"bpg\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/favourites",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"favourites"
+					]
+				},
+				"description": "Post a favoritos"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.thecatapi.com/v1/favourites",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "d6cb32cc-8e43-4c1c-9182-eec7395adc4d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/favourites",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"favourites"
+					]
+				},
+				"description": "Nos muestra los marcados de favoritos de nuestra app usando la api"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.thecatapi.com/v1/favourites/2053607",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "d6cb32cc-8e43-4c1c-9182-eec7395adc4d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/favourites/2053607",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"favourites",
+						"2053607"
+					]
+				},
+				"description": "Elimina el favorito que tenemos por el id"
+			},
+			"response": []
+		}
+	]
+}
